@@ -4,7 +4,7 @@ services:
     image: dockercloud/haproxy:1.2.1
     external_links:
       - site_web_1
-      - another_site_1
+      - anothersite_web_1
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
