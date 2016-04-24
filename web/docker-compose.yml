@@ -1,0 +1,14 @@
+version: '2'
+services:
+  web:
+    image: dockercloud/hello-world
+    environment: 
+      - "VIRTUAL_HOST=example.com"
+    expose: 
+      - "80"
+    network_mode: "bridge"
+networks:
+  default:
+    external:
+      name: bridge
+      
