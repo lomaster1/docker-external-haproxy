@@ -5,4 +5,4 @@ cd ../another_site
 docker-compose up -d
 
 cd ../haproxy
-docker-compose restart
+docker-compose up -d
